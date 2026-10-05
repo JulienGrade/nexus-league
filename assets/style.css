@@ -566,3 +566,95 @@ dd {
     font-size: .75rem;
 }
 
+.signup-form {
+    padding: 1.4rem;
+    border-radius: var(--radius);
+    background: var(--panel);
+}
+
+.signup-form h2 {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.signup-form > p {
+    color: var(--muted);
+    font-size: .85rem;
+}
+
+.signup-form fieldset {
+    margin: 2rem 0;
+    padding: 0;
+    border: 0;
+}
+
+.signup-form legend {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--lime);
+    font-weight: 850;
+    text-transform: uppercase;
+}
+
+.signup-form label {
+    display: block;
+    margin: .9rem 0 .35rem;
+    font-size: .82rem;
+    font-weight: 750;
+}
+
+.field-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: .85rem;
+    border: 1px solid #3a4351;
+    border-radius: 6px;
+    color: var(--text);
+    background: var(--bg);
+    font: inherit;
+}
+
+select {
+    width: 100%;
+    padding: .85rem;
+    border: 1px solid #3a4351;
+    border-radius: 6px;
+    color: var(--text);
+    background: var(--bg);
+    font: inherit;
+}
+
+textarea {
+    width: 100%;
+    padding: .85rem;
+    border: 1px solid #3a4351;
+    border-radius: 6px;
+    color: var(--text);
+    background: var(--bg);
+    font: inherit;
+    resize: vertical;
+}
+
+.checkbox {
+    display: flex!important;
+    align-items: flex-start;
+    gap: .75rem;
+}
+
+.checkbox input {
+    width: auto;
+    margin-top: .3rem;
+}
+
+.signup-form button {
+    width: 100%;
+    margin-top: 1rem;
+}
