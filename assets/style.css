@@ -692,3 +692,122 @@ textarea {
     color: var(--lime);
 }
 
+/* Tablette et écrans plus larges. */
+@media (min-width: 641px) {
+    /* Conteneur commun : marges latérales plus larges. */
+    .container {
+        width: min(calc(100% - 48px), var(--container));
+    }
+
+    /* En-tête commun : navigation visible à partir de 641 px. */
+    .header-inner {
+        min-height: 76px;
+    }
+
+    .header-inner nav {
+        display: flex;
+    }
+
+    .header-cta {
+        padding: .72rem 1rem;
+        font-size: .82rem;
+    }
+
+    /* Accueil — index.html : hero et titre. */
+    .home-hero {
+        min-height: 620px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(4rem, 7vw, 7rem);
+    }
+
+    .hero-content > p:not(.tag) {
+        font-size: 1.12rem;
+    }
+
+    /* Accueil — index.html : chiffres clés. */
+    .numbers-grid p {
+        padding: 1.6rem;
+    }
+
+    .numbers-grid strong {
+        font-size: 2rem;
+    }
+
+    /* Accueil — index.html : cartes des jeux à la une. */
+    .section {
+        padding-block: 6rem;
+    }
+
+    .section-heading {
+        align-items: end;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .game-card {
+        min-height: 540px;
+    }
+
+    /* Accueil — index.html : bandeau manifeste. */
+    .manifesto-grid {
+        gap: 3rem;
+    }
+
+    /* Tournois — tournois.html : introduction et cartes. */
+    .page-intro h1 {
+        font-size: clamp(2.6rem, 5vw, 5rem);
+    }
+
+    .page-intro {
+        padding-block: 5rem 4rem;
+    }
+
+    .tournament-content {
+        padding: 2rem;
+    }
+
+    .tournament-content h2 {
+        font-size: 2.3rem;
+    }
+
+    .compact {
+        grid-template-columns: 70px 1fr;
+        gap: 2rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .compact-number {
+        font-size: 4rem;
+    }
+
+    /* Inscription — inscription.html : titre et formulaire. */
+    .signup-intro h1 {
+        font-size: clamp(2.6rem, 5vw, 5rem);
+    }
+
+    .signup-page {
+        width: min(calc(100% - 48px), var(--container));
+    }
+
+    .signup-form {
+        padding: 2.3rem;
+    }
+
+    .field-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Pied de page commun : répartition sur trois colonnes. */
+    .footer-inner {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: end;
+    }
+
+    .footer-inner > div {
+        justify-content: end;
+    }
+}
