@@ -229,3 +229,39 @@ textarea:focus-visible {
     flex-wrap: wrap;
     flex-direction: column;
 }
+
+/* Accueil — index.html : chiffres clés sous le hero. */
+.numbers {
+    border-block: 1px solid var(--line);
+    background: var(--panel);
+}
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.numbers-grid p {
+    margin: 0;
+    padding: 1.1rem;
+    border-right: 1px solid var(--line);
+}
+
+.numbers-grid p:first-child {
+    border-left: 1px solid var(--line);
+}
+
+.numbers-grid strong {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.numbers-grid span {
+    display: block;
+    margin-top: .45rem;
+    color: var(--muted);
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
