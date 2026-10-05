@@ -68,4 +68,34 @@ textarea:focus-visible {
     outline-offset: 3px;
 }
 
+/* Composants communs : boutons et variantes réutilisés sur plusieurs pages. */
+.button {
+    display: inline-flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem 1.2rem;
+    border: 1px solid var(--lime);
+    border-radius: 7px;
+    font: inherit;
+    font-weight: 850;
+    text-transform: uppercase;
+    letter-spacing: .035em;
+    cursor: pointer;
+}
+
+.button.primary {
+    color: var(--bg);
+    background: var(--lime);
+}
+
+.button.ghost {
+    color: var(--text);
+    border-color: #68717e;
+    background: rgba(12, 15, 20, .5);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
 
