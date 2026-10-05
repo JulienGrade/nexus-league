@@ -811,3 +811,63 @@ textarea {
         justify-content: end;
     }
 }
+
+/* Mise en page bureau. */
+@media (min-width: 851px) {
+    /* Accueil — index.html : hero, chiffres clés et manifeste en grand écran. */
+    .home-hero {
+        min-height: 43.125rem;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(90deg, rgba(7, 9, 13, .98) 0%, rgba(7, 9, 13, .86) 38%, rgba(7, 9, 13, .12) 78%);
+    }
+
+    .numbers-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .manifesto-grid {
+        grid-template-columns: .55fr 1.4fr .8fr;
+    }
+
+    /* Tournois — tournois.html : image et détails côte à côte. */
+    .tournament:not(.compact) {
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+    .tournament > img {
+        height: 100%;
+        min-height: 25.625rem;
+    }
+
+    .compact {
+        grid-template-columns: 6.25rem 1fr auto;
+    }
+
+    /* Inscription — inscription.html : présentation et formulaire côte à côte. */
+    .signup-page {
+        grid-template-columns: .8fr 1.2fr;
+        gap: 5rem;
+    }
+}
+
+/* Respect des préférences de mouvement. */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition-duration: .01ms!important;
+    }
+
+    *::before {
+        transition-duration: .01ms!important;
+    }
+
+    *::after {
+        transition-duration: .01ms!important;
+    }
+}
+
