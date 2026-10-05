@@ -522,3 +522,47 @@ dd {
     color: var(--muted);
     grid-column: 2;
 }
+
+/* Inscription — inscription.html : présentation, étapes et formulaire. */
+.signup-intro h1 {
+    margin: .65rem 0 0;
+    font-size: 3rem;
+    line-height: .95;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+}
+
+.signup-page {
+    width: min(calc(100% - 32px), var(--container));
+    margin: 0 auto;
+    padding-block: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+.signup-intro > p:nth-of-type(2) {
+    max-width: 480px;
+    color: var(--muted);
+}
+
+.signup-intro ol {
+    margin: 3rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.signup-intro li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
+    font-weight: 750;
+}
+
+.signup-intro li span {
+    color: var(--lime);
+    font-size: .75rem;
+}
+
