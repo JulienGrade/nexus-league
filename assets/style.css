@@ -354,3 +354,35 @@ textarea:focus-visible {
     margin: 0;
     color: #d3d6dc;
 }
+
+/* Accueil — index.html : bandeau « L’esprit NEXUS ». */
+.manifesto {
+    padding-block: 5rem;
+    background: var(--lime);
+    color: var(--bg);
+}
+
+.manifesto-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.manifesto .eyebrow {
+    color: var(--bg);
+}
+
+blockquote {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 900;
+    line-height: .98;
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+}
+
+.manifesto-grid > p:last-child {
+    margin: 0;
+    font-weight: 650;
+}
