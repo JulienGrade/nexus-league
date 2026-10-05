@@ -99,3 +99,58 @@ textarea:focus-visible {
     transform: translateY(-2px);
 }
 
+/* En-tête commun : logo, navigation et lien d’inscription. */
+.site-header {
+    position: relative;
+    z-index: 5;
+    border-bottom: 1px solid var(--line);
+    background: rgba(12, 15, 20, .96);
+}
+
+.header-inner {
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.header-inner nav {
+    display: none;
+    gap: 2.2rem;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.header-inner nav a {
+    padding-block: .45rem;
+    border-bottom: 2px solid transparent;
+}
+
+.header-inner nav a:hover {
+    color: var(--lime);
+    border-color: var(--lime);
+}
+
+.header-inner nav .active {
+    color: var(--lime);
+    border-color: var(--lime);
+}
+
+.header-cta {
+    padding: .6rem .7rem;
+    border: 1px solid var(--lime);
+    border-radius: 7px;
+    color: var(--lime);
+    font-size: .7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    white-space: nowrap;
+}
+
+.header-cta:hover {
+    color: var(--bg);
+    background: var(--lime);
+}
+
