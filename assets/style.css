@@ -1,3 +1,14 @@
-/* TP 2 - NEXUS League */
-* { box-sizing: border-box; }
-body { margin: 0; }
+:root {
+    --bg: #0c0f14;
+    --panel: #151a22;
+    --panel-2: #1d2430;
+    --text: #f7f8fa;
+    --muted: #a7adb8;
+    --lime: #b9ff37;
+    --cyan: #40d9ff;
+    --orange: #ff6a3d;
+    --line: #2b3340;
+    --container: 73.75rem;
+    --radius: 18px;
+}
+
