@@ -32,6 +32,57 @@
                     <li><span>03</span>Validez le règlement</li>
                 </ol>
             </section>
+            <section class="signup-form" id="formulaire" aria-labelledby="form-title">
+                <h2 id="form-title">Inscription de l'équipe</h2>
+                <p>Les champs suivis de * sont obligatoires.</p>
+                <form action="#confirmation" method="get">
+                    <fieldset>
+                        <legend>Le tournoi</legend>
+                        <label for="game">Compétition *</label>
+                        <select id="game" name="game" required="">
+                            <option value="">Sélectionnez un tournoi</option>
+                            <option>Velocity Rush</option>
+                            <option>Crystal Siege</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>L'équipe</legend>
+                        <div class="field-row">
+                            <div>
+                                <label for="team">Nom de l'équipe *</label>
+                                <input id="team" name="team" type="text" required="" minlength="3" autocomplete="organization">
+                            </div>
+                            <div>
+                                <label for="players">Nombre de joueurs *</label>
+                                <input id="players" name="players" type="number" min="2" max="4" required="">
+                            </div>
+                        </div>
+                        <label for="level">Niveau principal</label>
+                        <select id="level" name="level">
+                            <option>Loisir</option>
+                            <option>Intermédiaire</option>
+                            <option>Compétition</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Le capitaine</legend>
+                        <div class="field-row">
+                            <div>
+                                <label for="name">Prénom et nom *</label>
+                                <input id="name" name="name" type="text" required="" autocomplete="name">
+                            </div>
+                            <div>
+                                <label for="email">Adresse e-mail *</label>
+                                <input id="email" name="email" type="email" required="" autocomplete="email">
+                            </div>
+                        </div>
+                        <label for="message">Présentez votre équipe en quelques mots</label>
+                        <textarea id="message" name="message" rows="4" maxlength="300"></textarea>
+                    </fieldset>
+                    <label class="checkbox"><input type="checkbox" name="rules" required=""><span>J'ai lu et j'accepte le règlement de la compétition. *</span></label>
+                    <button class="button primary" type="submit">Envoyer l'inscription</button>
+                </form>
+            </section>
         </main>
         <footer class="site-footer">
             <div class="container footer-inner">
