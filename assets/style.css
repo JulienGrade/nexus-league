@@ -265,3 +265,92 @@ textarea:focus-visible {
     text-transform: uppercase;
     letter-spacing: .05em;
 }
+
+/* Accueil — index.html : section des jeux et tournois à la une. */
+.section {
+    padding-block: 4rem;
+}
+
+.section-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    flex-direction: column;
+}
+
+.section-heading h2 {
+    margin: .65rem 0 0;
+    font-size: clamp(2.6rem, 5vw, 5rem);
+    line-height: .95;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+}
+
+.arrow-link {
+    padding-bottom: .25rem;
+    border-bottom: 1px solid var(--lime);
+    color: var(--lime);
+    font-weight: 750;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.game-card {
+    position: relative;
+    min-height: 430px;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--panel);
+}
+
+.game-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.game-card::after {
+    content: "";
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(transparent, rgba(7, 9, 13, .96));
+}
+
+.game-card:hover img {
+    transform: scale(1.025);
+}
+
+.game-copy {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+}
+
+.game-copy span {
+    color: var(--lime);
+    font-size: .75rem;
+    font-weight: 850;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+}
+
+.game-copy h3 {
+    margin: .5rem 0 .2rem;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.game-copy p {
+    margin: 0;
+    color: #d3d6dc;
+}
